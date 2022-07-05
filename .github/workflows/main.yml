@@ -1,5 +1,0 @@
-steps:
-  - name: Store Credentials
-    env:
-      CLIENT_ID_GITSECRET:  ${{ secrets.CLIENT_ID_GITSECRET }}
-      CLIENT_SECRET_GITSECRET:  ${{ secrets.CLIENT_SECRET_GITSECRET }}
