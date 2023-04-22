@@ -18,6 +18,7 @@ else:
         offset_user_playlists += limit_user_playlists
         user_playlists_response = spotify.current_user_playlists(limit=limit_user_playlists,
                                                                  offset=offset_user_playlists)
+        print(user_playlists_response['items'][0])
         if user_playlists_response.get('items'):
             playlists_items = {**playlists_items, **user_playlists_response['items'][0]}
 
